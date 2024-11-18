@@ -1,0 +1,18 @@
+The optimized implementation improves the computational complexity and code maintainability
+by reducing redundant operations.
+
+Computational Complexity:
+
+    Original Code: Repeatedly calculates cumulative sums and regrets, increasing overhead O(n⋅k).
+    Optimized Code: Updates cumulative rewards and regrets in real-time O(1) per update, O(n) overall).
+    Uses NumPy vectorization for faster updates.
+
+Experiment Updates:
+
+    In the original code, the complexity was O(n⋅k) because redundant calculations were repeated multiple times.
+    In the optimized code, it’s reduced to O(n) by eliminating redundant computations.
+
+Memory Usage:
+
+    The original code used more memory due to repeated creation of temporary arrays.
+    The optimized code uses in-place updates, minimizing memory usage.
